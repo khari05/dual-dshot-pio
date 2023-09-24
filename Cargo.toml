@@ -6,9 +6,10 @@ edition = "2021"
 [features]
 embassy-rp = ["dep:embassy-rp"]
 rp2040-hal = ["dep:rp2040-hal"]
+bidirectional = ["dep:embassy-rp"]
 
 [dependencies]
-dshot-encoder = { git = "https://github.com/peterkrull/dshot-encoder" }
+dshot-encoder = { path="../dshot-encoder" } # git = "https://github.com/peterkrull/dshot-encoder" }
 
 pio-proc = "0.2"
 pio = "0.2"
